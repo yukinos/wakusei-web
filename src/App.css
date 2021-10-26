@@ -1,0 +1,25 @@
+.header{
+  background-color:salmon;
+  height:110px;
+}
+
+.header-logo{
+  width: 400px;
+  margin:0 auto;
+}
+
+.header-logo img{
+  height:100px;
+}
+
+ol{
+  display:inline-block;
+}
+
+h2{
+  background-color: coral;
+}
+
+h3{
+  background-color: crimson;
+}
