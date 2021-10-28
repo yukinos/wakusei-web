@@ -23,3 +23,17 @@ h2{
 h3{
   background-color: crimson;
 }
+
+.back{
+  background-image:url("./images/wakusei_concept_art.png");
+  background-size:cover;
+  height:1000px;
+}
+
+.footer{
+  background-color:rgba(23, 19, 51, 0.808);
+  height:200px;
+  color:white;
+  font-size:80px;
+  
+}

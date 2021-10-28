@@ -4,7 +4,7 @@ class Main extends React.Component{
     render(){
         return(
             <div>
-                <h2>メインだぜ！</h2>
+                <h2 class="back">メインです</h2>
             </div>
         );
     }
