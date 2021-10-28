@@ -3,14 +3,21 @@ import './App.css';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
+import Stars from './Stars';
+import './stars.css';
 
-class App extends React.Component{
-  render(){
-    return(
+class App extends React.Component {
+  render() {
+    return (
       <div>
         <Header />
-        <Main />
-        <Footer />
+        {
+          //<Main />
+        }
+        <div class="star comet"></div>
+        {
+          // <Footer />
+        }
       </div>
     );
   }

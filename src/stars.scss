@@ -1,0 +1,86 @@
+$blue: #03061a;
+$panko: #edcda3;
+$white: #ffffff;
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+html,
+body {
+  @include size(100%);
+  margin: 0;
+  padding: 0;
+  background-color: $blue;
+  position: relative;
+  overflow: hidden;
+}
+
+.star {
+  @include size(3px);
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgba($panko, 0.8);
+  box-shadow: 0 0 40px 0 rgba($panko, 0.8), 0 0 20px 0 $white;
+  animation: glow 5s infinite;
+  &--medium {
+    @include size(6px);
+  }
+  &--big {
+    @include size(9px);
+    box-shadow: 0 0 40px 0 $panko, 0 0 20px 0 $white, inset 0 0 4px $white;
+  }
+}
+
+.comet {
+  @include size(6px);
+  background-color: rgba($white, 0.6);
+  box-shadow: 0 0 40px 0 $panko, 0 0 20px 0 $white,
+    inset 0 0 8px rgba($white, 0.6);
+  top: 0;
+  left: 80%;
+  opacity: 0.3;
+  transform: rotate(-45deg) translate(0, -50px);
+  animation: comet 6s infinite;
+  &:after {
+    content: '';
+    @include size(20vw, 6px);
+    border-radius: 50%;
+    background-color: rgba($white, 0.1);
+    box-shadow: 0 0 20px rgba($panko, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes comet {
+  0% {
+    transform: rotate(-45deg) translateX(0);
+    opacity: 0.3;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    transform: rotate(-45deg) translateX(-100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(-45deg) translateX(-100vw);
+    opacity: 0;
+  }
+}

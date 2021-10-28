@@ -1,25 +1,25 @@
-.header{
-  background-color:salmon;
-  height:110px;
+.header {
+  background-color: rgb(4, 0, 65);
+  height: 110px;
 }
 
-.header-logo{
+.header-logo {
   width: 400px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-.header-logo img{
-  height:100px;
+.header-logo img {
+  height: 100px;
 }
 
-ol{
-  display:inline-block;
+ol {
+  display: inline-block;
 }
 
-h2{
+h2 {
   background-color: coral;
 }
 
-h3{
+h3 {
   background-color: crimson;
 }
