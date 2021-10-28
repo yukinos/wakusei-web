@@ -14,7 +14,7 @@ class App extends React.Component {
         {
           //<Main />
         }
-        <div class="star comet"></div>
+        <Stars />
         {
           // <Footer />
         }
