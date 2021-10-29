@@ -16,14 +16,6 @@ ol{
   display:inline-block;
 }
 
-h2{
-  background-color: coral;
-}
-
-h3{
-  background-color: crimson;
-}
-
 .back-ground{
   background-image:url("./images/wakusei_concept_art.png");
   background-size:cover;
@@ -54,7 +46,7 @@ h3{
   font-size:30px;
 }
 
-button{
+.button1{
   margin:60px 400px 100px 210px;
   padding:60px 200px;
   font-size:30px;
@@ -63,6 +55,32 @@ button{
   opacity:0.9;
 }
 
+.button2{
+  margin:60px 400px 100px 210px;
+  padding:60px 200px;
+  font-size:30px;
+  background-color:rgb(111, 90, 206);
+  color:white;
+  opacity:0.9;
+}
+
+
 .main{
-  height:2000px;
+  height:2500px;
+}
+
+.apple{
+  height:150px;
+}
+
+.google{
+  height:200px;
+}
+
+.story{
+  margin-top:0;
+}
+
+.character{
+  float:right;
 }
