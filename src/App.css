@@ -24,10 +24,11 @@ h3{
   background-color: crimson;
 }
 
-.back{
+.back-ground{
   background-image:url("./images/wakusei_concept_art.png");
   background-size:cover;
-  height:1000px;
+  height:2000px;
+  background-attachment:fixed;
 }
 
 .footer{
@@ -40,16 +41,28 @@ h3{
 }
 
 .title{
-  padding:100px;
+  margin:0px 100px 0px 100px;
   font-family:serif;
   font-size:150px;
+  padding:80px 0 0 0;
+  font-weight:bold;
 }
 
 .text{
-  padding:20px 200px;
+  padding:20px;
+  margin:20px 200px;
   font-size:30px;
 }
 
 button{
-  padding:20px 50px;
+  margin:60px 400px 100px 210px;
+  padding:60px 200px;
+  font-size:30px;
+  background-color:rgb(255, 110, 110);
+  color:white;
+  opacity:0.9;
+}
+
+.main{
+  height:2000px;
 }
