@@ -24,7 +24,6 @@ class Main extends React.Component{
                     <h1 class="ques2">Q , discordサーバーとは？</h1>
                     <h2 class="ans2">A , よくあるSNSの中で作られるグループの様なものです</h2>
                     <p>そういうことだってばさ！</p>
-                    
                 </div>
 
             </div>
