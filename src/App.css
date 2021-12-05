@@ -38,12 +38,14 @@ ol{
   font-size:150px;
   padding:80px 0 0 0;
   font-weight:bold;
+  color:white;
 }
 
 .text{
   padding:20px;
   margin:20px 200px;
   font-size:30px;
+  color:honeydew;
 }
 
 .button1{
@@ -83,4 +85,49 @@ ol{
 
 .character{
   float:right;
+}
+
+.background::before{
+  background-color: rgba(0,0,0,.5);
+  position:absolute;
+}
+
+@keyframes swing{
+  0%{
+    transform:rotate(0deg);
+  }
+  10%{
+    transform:rotate(10deg);
+  }
+  30%{
+    transform:rotate(0deg);
+  }
+  40%{
+    transform:rotate(-10deg);
+  }
+  50%{
+    transform:rotate(0deg);
+  }
+  60%{
+    transform:rotate(5deg);
+  }
+  70%{
+    transform:rotate(0deg);
+  }
+  80%{
+    transform:rotate(-5deg);
+  }
+  100%{
+    transform:rotate(0deg);
+  }
+}
+
+.join_button{
+  height:350px;
+  padding-left:350px;
+  animation-name:swing;
+  animation-duration:0.5s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
 }
