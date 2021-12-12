@@ -1,6 +1,6 @@
 .header{
   background-color:salmon;
-  height:110px;
+  height:120px;
 }
 
 .header-logo{
@@ -16,10 +16,118 @@ ol{
   display:inline-block;
 }
 
-h2{
-  background-color: coral;
+.back-ground{
+  background-image:url("./images/wakusei_concept_art.png");
+  background-size:cover;
+  height:2000px;
+  background-attachment:fixed;
 }
 
-h3{
-  background-color: crimson;
+.footer{
+  background-color:rgba(23, 19, 51, 0.808);
+  height:150px;
+  color:white;
+  font-size:80px;
+  text-align:center;
+  padding:30px 0 0 0;
+}
+
+.title{
+  margin:0px 100px 0px 100px;
+  font-family:serif;
+  font-size:150px;
+  padding:80px 0 0 0;
+  font-weight:bold;
+  color:white;
+}
+
+.text{
+  padding:20px;
+  margin:20px 200px;
+  font-size:30px;
+  color:honeydew;
+}
+
+.button1{
+  margin:60px 400px 100px 210px;
+  padding:60px 200px;
+  font-size:30px;
+  background-color:rgb(255, 110, 110);
+  color:white;
+  opacity:0.9;
+}
+
+.button2{
+  margin:60px 400px 100px 210px;
+  padding:60px 200px;
+  font-size:30px;
+  background-color:rgb(111, 90, 206);
+  color:white;
+  opacity:0.9;
+}
+
+
+.main{
+  height:2500px;
+}
+
+.apple{
+  height:150px;
+}
+
+.google{
+  height:200px;
+}
+
+.story{
+  margin-top:0;
+}
+
+.character{
+  float:right;
+}
+
+.background::before{
+  background-color: rgba(0,0,0,.5);
+  position:absolute;
+}
+
+@keyframes swing{
+  0%{
+    transform:rotate(0deg);
+  }
+  10%{
+    transform:rotate(10deg);
+  }
+  30%{
+    transform:rotate(0deg);
+  }
+  40%{
+    transform:rotate(-10deg);
+  }
+  50%{
+    transform:rotate(0deg);
+  }
+  60%{
+    transform:rotate(5deg);
+  }
+  70%{
+    transform:rotate(0deg);
+  }
+  80%{
+    transform:rotate(-5deg);
+  }
+  100%{
+    transform:rotate(0deg);
+  }
+}
+
+.join_button{
+  height:350px;
+  padding-left:350px;
+  animation-name:swing;
+  animation-duration:0.5s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
 }
