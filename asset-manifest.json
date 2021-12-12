@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/wakusei-web/static/css/main.02687ded.chunk.css",
-    "main.js": "/wakusei-web/static/js/main.7b61e71f.chunk.js",
-    "main.js.map": "/wakusei-web/static/js/main.7b61e71f.chunk.js.map",
-    "runtime-main.js": "/wakusei-web/static/js/runtime-main.97c8c3b6.js",
-    "runtime-main.js.map": "/wakusei-web/static/js/runtime-main.97c8c3b6.js.map",
-    "static/js/2.ae8130ea.chunk.js": "/wakusei-web/static/js/2.ae8130ea.chunk.js",
-    "static/js/2.ae8130ea.chunk.js.map": "/wakusei-web/static/js/2.ae8130ea.chunk.js.map",
-    "index.html": "/wakusei-web/index.html",
-    "static/css/main.02687ded.chunk.css.map": "/wakusei-web/static/css/main.02687ded.chunk.css.map",
-    "static/js/2.ae8130ea.chunk.js.LICENSE.txt": "/wakusei-web/static/js/2.ae8130ea.chunk.js.LICENSE.txt",
-    "static/media/wakusei-logo.e373d16e.png": "/wakusei-web/static/media/wakusei-logo.e373d16e.png"
+    "main.css": "/static/css/main.02687ded.chunk.css",
+    "main.js": "/static/js/main.7b61e71f.chunk.js",
+    "main.js.map": "/static/js/main.7b61e71f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.dd6afba4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.dd6afba4.js.map",
+    "static/js/2.ae8130ea.chunk.js": "/static/js/2.ae8130ea.chunk.js",
+    "static/js/2.ae8130ea.chunk.js.map": "/static/js/2.ae8130ea.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.02687ded.chunk.css.map": "/static/css/main.02687ded.chunk.css.map",
+    "static/js/2.ae8130ea.chunk.js.LICENSE.txt": "/static/js/2.ae8130ea.chunk.js.LICENSE.txt",
+    "static/media/wakusei-logo.e373d16e.png": "/static/media/wakusei-logo.e373d16e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.97c8c3b6.js",
+    "static/js/runtime-main.dd6afba4.js",
     "static/js/2.ae8130ea.chunk.js",
     "static/css/main.02687ded.chunk.css",
     "static/js/main.7b61e71f.chunk.js"
