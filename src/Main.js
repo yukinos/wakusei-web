@@ -1,7 +1,7 @@
 import React from 'react';
 import Apple from './images/apple-logo.svg';
 import Google from './images/google-play.png';
-import Join_button from './images/join_button.png';
+import Join_button_a from './images/join_button_a.png';
 
 class Main extends React.Component{
     render(){
@@ -12,7 +12,7 @@ class Main extends React.Component{
                     <p class="text">作業のわくせいは作業通話を専門としたdiscordサーバーです</p>
                     <p class="text">わくせいの調査員としてのんびり作業しませんか？</p>
                     <p class="text">宇宙人があなた作業をサポートしてくれます</p>
-                    <img class="join_button" src={Join_button} alt="join"/>
+                    <img class="join_button" src={Join_button_a} alt="join"/>
                     <h1 class="ques1">Q , discordとは？</h1>
                     <h2 class="ans1">A , 通話がとても快適にできるすごいSNSなのです</h2>
                     <h3>discordをダウンロード！↓↓↓</h3>

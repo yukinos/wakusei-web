@@ -123,11 +123,6 @@ ol{
 }
 
 .join_button{
-  height:350px;
-  padding-left:350px;
-  animation-name:swing;
-  animation-duration:0.5s;
-  animation-timing-function:ease-in-out;
-  animation-iteration-count:infinite;
-  animation-direction:alternate;
+  height:300px;
+  padding-left:200px;
 }
