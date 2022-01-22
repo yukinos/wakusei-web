@@ -122,7 +122,33 @@ ol{
   }
 }
 
-.join_button{
+.join_button_a{
   height:300px;
   padding-left:200px;
+}
+
+.qa1{
+  color:white;
+  padding-left:100px;
+}
+
+span1{
+  color:crimson;
+}
+
+span2{
+  color:rgb(22, 4, 102);
+}
+
+.disdow{
+  padding-left:100px;
+  color:white;
+}
+
+.apple{
+  padding-left:100px;
+}
+
+.google{
+  padding-left:40px;
 }
