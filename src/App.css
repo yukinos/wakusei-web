@@ -1,133 +1,236 @@
-.header{
-  background-color:salmon;
-  height:120px;
+/*pc表示*/
+.header {
+  background-color: salmon;
+  height: 120px;
 }
 
-.header-logo{
-  width: 400px;
-  margin:0 auto;
+.header-logo {
+  width: 300px;
+  margin: 0 auto;
 }
 
-.header-logo img{
-  height:100px;
+.header-logo img {
+  height: 100px;
 }
 
-ol{
-  display:inline-block;
+.background {
+  background-image: url("./images/wakusei-concept-art.png");
+  background-size: cover;
+  height: 2000px;
+  background-attachment: fixed;
 }
 
-.back-ground{
-  background-image:url("./images/wakusei_concept_art.png");
-  background-size:cover;
-  height:2000px;
-  background-attachment:fixed;
+.background::before {
+  animation-name: fade;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 1000;
+  right: 0;
+  bottom: 1000;
+  left: 0;
+  content: " ";
+  height: 750px;
 }
 
-.footer{
-  background-color:rgba(23, 19, 51, 0.808);
-  height:150px;
-  color:white;
-  font-size:80px;
-  text-align:center;
-  padding:30px 0 0 0;
+.Discordlogo {
+  height: 100px;
+  position: absolute;
+  top: 120px;
+  left: 200px;
+  animation-name: fade;
+  animation-duration: 1s;
 }
 
-.title{
-  margin:0px 100px 0px 100px;
-  font-family:serif;
-  font-size:150px;
-  padding:80px 0 0 0;
-  font-weight:bold;
-  color:white;
+.sub-title {
+  color: white;
+  position: absolute;
+  font-size: 50px;
+  top: 95px;
+  left: 600px;
+  animation-name: fade;
+  animation-duration: 1s;
 }
 
-.text{
-  padding:20px;
-  margin:20px 200px;
-  font-size:30px;
-  color:honeydew;
+.box {
+  position: absolute;
+  width: 100%;
 }
 
-.button1{
-  margin:60px 400px 100px 210px;
-  padding:60px 200px;
-  font-size:30px;
-  background-color:rgb(255, 110, 110);
-  color:white;
-  opacity:0.9;
+.title {
+  font-family: serif;
+  font-size: 250px;
+  top: 20px;
+  left: 130px;
+  font-weight: bold;
+  color: white;
+  animation-name: fade;
+  animation-duration: 3s;
+  position: absolute;
 }
 
-.button2{
-  margin:60px 400px 100px 210px;
-  padding:60px 200px;
-  font-size:30px;
-  background-color:rgb(111, 90, 206);
-  color:white;
-  opacity:0.9;
+.whiteback {
+  background-color: whitesmoke;
+  position: absolute;
+  content: " ";
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+  margin: 750px 0 0 0;
 }
 
-
-.main{
-  height:2500px;
+.content1 {
+  font-family: "yurumoji", sans-serif;
+  animation: fadeUpanime 0.5s ease 0s forwards, scale 0.5s ease 1.2s forwards;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  margin: 230px 0px 0px 640px;
+  padding: 100px 120px 100px 120px;
 }
 
-.apple{
-  height:150px;
+.content1 h2 {
+  opacity: 0.8;
 }
 
-.google{
-  height:200px;
-}
-
-.story{
-  margin-top:0;
-}
-
-.character{
-  float:right;
-}
-
-.background::before{
-  background-color: rgba(0,0,0,.5);
-  position:absolute;
-}
-
-@keyframes swing{
-  0%{
-    transform:rotate(0deg);
+@keyframes border_anim {
+  0% {
+    width: 0%;
   }
-  10%{
-    transform:rotate(10deg);
-  }
-  30%{
-    transform:rotate(0deg);
-  }
-  40%{
-    transform:rotate(-10deg);
-  }
-  50%{
-    transform:rotate(0deg);
-  }
-  60%{
-    transform:rotate(5deg);
-  }
-  70%{
-    transform:rotate(0deg);
-  }
-  80%{
-    transform:rotate(-5deg);
-  }
-  100%{
-    transform:rotate(0deg);
+  100% {
+    width: 50%;
   }
 }
 
-.join_button{
-  height:350px;
-  padding-left:350px;
-  animation-name:swing;
-  animation-duration:0.5s;
-  animation-timing-function:ease-in-out;
-  animation-iteration-count:infinite;
-  animation-direction:alternate;
+@keyframes fadeUpanime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@font-face {
+  font-family: "pigmo";
+  src: url("./fonts/Pigmo-01.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "yurumoji";
+  src: url("./fonts/yurumoji.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "hanahata";
+  src: url("./fonts/HANAHATA.TTF") format("truetype");
+}
+
+.alien1 {
+  position: absolute;
+  height: 150px;
+  right: 480px;
+  bottom: 200px;
+  opacity: 0;
+  animation: fadeRightAnime 0.5s ease 0.7s forwards,
+    rotateleft 0.5s ease 1.3s forwards;
+}
+
+.alien2 {
+  position: absolute;
+  height: 150px;
+  left: 470px;
+  top: 260px;
+  opacity: 0;
+  animation: fadeLeftAnime 0.5s ease 0.7s forwards,
+    rotateright 0.5s ease 1.6s forwards;
+}
+
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotateleft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes rotateright {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.wide-border {
+  position: absolute;
+  border-top: solid 1px rgb(202, 202, 202);
+  width: 1500px;
+  bottom: -900px;
+  left: 200px;
+  opacity: 0.1;
+  animation: fadeUpanime 0.5s ease 0s forwards;
+}
+
+/*タブレット表示*/
+@media screen and (max-width: 767px) {
+  .color {
+    color: green;
+  }
+}
+
+/*スマホ表示*/
+@media screen and (max-width: 479px) {
+  .color {
+    color: red;
+  }
 }
