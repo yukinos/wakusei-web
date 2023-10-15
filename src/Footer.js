@@ -4,10 +4,11 @@ class Footer extends React.Component {
   render() {
     return (
         <div class="footer">
-            <ul>
-                <li>TOP</li>
-                <li>キャラクター</li>
-            </ul>
+          <div class="footer-menu-list">
+            <p>TOP</p>
+            <p>キャラクター</p>
+          </div>
+            <div class="copyright">© 2023 わくせい</div>
         </div>
     );
   }

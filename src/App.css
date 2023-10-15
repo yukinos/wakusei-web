@@ -321,3 +321,23 @@ h1{
   background-size:cover;
   width:100%;
 }
+
+.footer-menu-list{
+  list-style:none;
+  position:absolute;
+  top:30px;
+  left:40px;
+  opacity:0.8;
+}
+
+.footer-menu-list p:hover{
+  cursor: pointer;
+  opacity:0.6;
+}
+
+.copyright{
+  top:230px;
+  left:900px;
+  position:absolute;
+  opacity: 0.8;
+}
