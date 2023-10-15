@@ -5,7 +5,7 @@ class Footer extends React.Component {
     return (
         <div class="footer">
           <div class="footer-menu-list">
-            <p>TOP</p>
+            <p>HOME</p>
             <p>キャラクター</p>
           </div>
             <div class="copyright">© 2023 わくせい</div>
