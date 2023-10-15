@@ -1,0 +1,323 @@
+/*pc表示*/
+
+/*Header*/
+.header {
+  background-color: salmon;
+  height: 120px;
+}
+
+.header-logo {
+  width: 300px;
+  margin: 0 auto; /*中央揃え*/
+}
+
+.header-logo img {
+  height: 100px;
+}
+
+/*Hero*/
+
+.background {
+  background-image: url("./images/wakusei-concept-art.png");
+  background-size: cover; /*画面一杯に表示*/
+  height: 750px;
+  background-attachment: fixed; /*画面固定*/
+}
+
+/*フィルターの様なものをかける*/
+.background::before {
+  animation-name: fade;
+  animation-duration: 5s;
+  animation-fill-mode: forwards; /*加速度*/
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 1000;
+  right: 0;
+  bottom: 1000;
+  left: 0;
+  content: " ";
+  height: 750px;
+}
+
+.box {
+  position: absolute;
+  width: 100%;
+}
+
+.Discordlogo {
+  height: 100px;
+  position: absolute;
+  top: 120px;
+  left: 200px;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+.sub-title {
+  color: white;
+  position: absolute;
+  font-size: 50px;
+  top: 95px;
+  left: 600px;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+.title {
+  font-family: serif;
+  font-size: 250px;
+  top: 20px;
+  left: 130px;
+  font-weight: bold;
+  color: white;
+  animation-name: fade;
+  animation-duration: 3s;
+  position: absolute;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.whiteback {
+  background-color: whitesmoke;
+  position: absolute;
+  background-size: cover;
+  height: 10px;
+  width: 100%;
+}
+
+/*border*/
+.border1 {
+  border-top: 1px solid #b4b4b4;
+  text-align: center;
+  width: 1300px;
+  position: absolute;
+  top: 1750px;
+  left: 310px;
+}
+
+.border2 {
+  border-top: 1px solid #b4b4b4;
+  text-align: center;
+  width: 1300px;
+  position: absolute;
+  top: 2520px;
+  left: 310px;
+}
+
+.border3 {
+  border-top: 1px solid #b4b4b4;
+  text-align: center;
+  width: 1300px;
+  position: absolute;
+  top: 3290px;
+  left: 310px;
+}
+
+
+/*Main1*/
+
+.content1 {
+  font-family: "yurumoji", sans-serif;
+  animation: fadeUpanime 0.5s ease 0s forwards, scale 0.5s ease 1.2s forwards;
+  opacity: 0s;
+  position: absolute;
+  text-align: center;
+  margin: 230px 0px 0px 620px;
+  padding: 100px 120px 100px 120px;
+}
+
+.content2 {
+  font-family: "yurumoji", sans-serif;
+  animation: fadeUpanime 0.5s ease 0s forwards, scale 0.5s ease 1.2s forwards;
+  opacity: 0s;
+  position: absolute;
+  text-align: center;
+  margin: 1000px 0px 0px 570px;
+  padding: 100px 120px 100px 120px;
+}
+
+.content3 {
+  font-family: "yurumoji", sans-serif;
+  animation: fadeUpanime 0.5s ease 0s forwards, scale 0.5s ease 1.2s forwards;
+  opacity: 0s;
+  position: absolute;
+  text-align: center;
+  margin: 1770px 0px 0px 550px;
+  padding: 100px 120px 100px 120px;
+}
+
+h2 {
+  opacity: 0.8;
+}
+
+@keyframes fadeUpanime {
+  from {
+    opacity: 0s;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@font-face {
+  font-family: "yurumoji";
+  src: url("./fonts/yurumoji.ttf") format("truetype");
+}
+
+.alien1 {
+  position: absolute;
+  height: 150px;
+  right: 480px;
+  bottom: 200px;
+  opacity: 0;
+  animation: fadeRightAnime 0.5s ease 0.7s forwards,
+    rotateleft 0.5s ease 1.3s forwards;
+}
+
+.alien2 {
+  position: absolute;
+  height: 150px;
+  left: 470px;
+  bottom: 220px;
+  opacity: 0;
+  animation: fadeLeftAnime 0.5s ease 0.7s forwards,
+    rotateright 0.5s ease 1.6s forwards;
+}
+
+.alien3 {
+  position: absolute;
+  height: 150px;
+  right: 560px;
+  bottom: 200px;
+  opacity: 0;
+  animation: fadeRightAnime 0.5s ease 0.7s forwards,
+    rotateleft 0.5s ease 1.3s forwards;
+}
+
+.alien4 {
+  position: absolute;
+  height: 150px;
+  left: 550px;
+  bottom: 180px;
+  opacity: 0;
+  animation: fadeLeftAnime 0.5s ease 0.7s forwards,
+    rotateright 0.5s ease 1.6s forwards;
+}
+
+.alien5 {
+  position: absolute;
+  height: 150px;
+  right: 560px;
+  bottom: 230px;
+  opacity: 0;
+  animation: fadeRightAnime 0.5s ease 0.7s forwards,
+    rotateleft 0.5s ease 1.3s forwards;
+}
+
+.alien6 {
+  position: absolute;
+  height: 150px;
+  left: 550px;
+  bottom: 170px;
+  opacity: 0;
+  animation: fadeLeftAnime 0.5s ease 0.7s forwards,
+    rotateright 0.5s ease 1.6s forwards;
+}
+
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotateleft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes rotateright {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1{
+  position:absolute;
+  font-family: "yurumoji", sans-serif;
+  text-align: center;
+  top:3400px;
+  left:865px;
+  animation:scale 0.5s ease 0s forwards;
+  opacity:0.8;
+}
+
+.button{
+  position:absolute;
+  top:3720px;
+  left:830px;
+  animation:scale 0.5s ease 0s forwards;
+}
+
+/*Footer*/
+.footer{
+  top:4300px;
+  background-color:#cecece;
+  height:300px;
+  position:absolute;
+  background-size:cover;
+  width:100%;
+}

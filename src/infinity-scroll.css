@@ -1,0 +1,32 @@
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.scroll-infinity__wrap {
+  display: flex;
+  overflow: hidden;
+}
+.scroll-infinity__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.scroll-infinity__list--left {
+  animation: infinity-scroll-left 10s infinite linear 0.5s both;
+}
+.scroll-infinity__item {
+  width: calc(100vw / 9);
+}
+.scroll-infinity__item > img {
+  width: 100%;
+}
+
+.scroll-infinity{
+    position:absolute;
+    top:4000px;
+    width:100%;
+}
