@@ -15,6 +15,32 @@
   height: 100px;
 }
 
+.head-cha{
+  color:white;
+  position:absolute;
+  top:30px;
+  left:600px;
+  font-family:serif;
+}
+
+.head-cha:hover{
+  cursor:pointer;
+  color:gray;
+}
+
+.head-ri{
+  position:absolute;
+  color:white;
+  top:30px;
+  left:1210px;
+  font-family:serif;
+}
+
+.head-ri:hover{
+  cursor:pointer;
+  color:gray;
+}
+
 /*Hero*/
 
 .background {
