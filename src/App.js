@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-
+import { Routes, Route } from 'react-router-dom';
+import Home from './routes/home';
 
 import Header from "./Header";
 import Hero from "./Hero";
@@ -28,6 +29,9 @@ class App extends React.Component {
         <Border3 />
         <Main4 />
         <Footer />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </div>
     );
   }
